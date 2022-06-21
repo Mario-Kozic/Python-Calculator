@@ -41,10 +41,28 @@ def button_equal():
         e.insert(0, f_num / int(second_number))
 
 def button_subtract():
+    first_number = e.get()
+    global f_num
+    global math
+    math = "subtraction"
+    f_num = int(first_number)
+    e.delete(0, END)
 
 def button_multiply():
+    first_number = e.get()
+    global f_num
+    global math
+    math = "multiplication"
+    f_num = int(first_number)
+    e.delete(0, END)
 
 def button_divide():
+    first_number = e.get()
+    global f_num
+    global math
+    math = "division"
+    f_num = int(first_number)
+    e.delete(0, END)
 
 
 button_1 = Button(root, text='1', padx=30, pady=12, command=lambda: button_click(1))
